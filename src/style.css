@@ -1,0 +1,105 @@
+
+body {
+  background-color: #00051f;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  position: fixed;   /* sticks it to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width */
+  height: 10%;      /* adjust as needed */
+  background-color: #000000;
+  color: white;
+  display: flex;
+}
+
+.nav-main{
+  width: 10%;
+  height: 100%;   /* set desired width */
+  display: flex; /* ensures width/height apply */
+}
+
+/* LINK MENU */
+
+#links-main{
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  width: 95%;
+  border: 15%;
+  background-color: #4d4d4d;
+  display: flex;
+}
+
+#links-custom{
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  width: 95%;
+  border: 15%;
+  background-color: #4d4d4d;
+  display: flex;
+}
+
+.link-header{
+  color: aliceblue;
+}
+
+
+
+/* ETERNAL MENUS */
+
+#settings-menu {
+  position: fixed;       /* stays on screen */
+  top: 50%;              /* move to middle vertically */
+  left: 50%;             /* move to middle horizontally */
+  transform: translate(-50%, -50%); /* perfectly center */
+
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: none;
+}
+
+#user-menu {
+  position: fixed;       /* stays on screen */
+  top: 50%;              /* move to middle vertically */
+  left: 50%;             /* move to middle horizontally */
+  transform: translate(-50%, -50%); /* perfectly center */
+
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: none;
+}
+
+#about-menu {
+  position: fixed;       /* stays on screen */
+  top: 50%;              /* move to middle vertically */
+  left: 50%;             /* move to middle horizontally */
+  transform: translate(-50%, -50%); /* perfectly center */
+
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: none;
+}
+
+#power-menu {
+  position: fixed;       /* stays on screen */
+  top: 50%;              /* move to middle vertically */
+  left: 50%;             /* move to middle horizontally */
+  transform: translate(-50%, -50%); /* perfectly center */
+
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: none;
+}

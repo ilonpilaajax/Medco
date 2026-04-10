@@ -1,39 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
 
-  <body>
-    <main class="container">
-      <h1>Welcome to Tauri</h1>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts/screen.js"></script>
 
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-      <p>Click on the Tauri logo to learn more about the framework</p>
+</head>
+<body>
+  <header>
+        <div class="menu">
+          <a class="nav-main" onclick="change_menu_state('power-menu', 'block')"><img src="media/buttons/power-off.png"></a>
+          <a class="nav-main" onclick="change_menu_state('setting-menu', 'block')"><img src="media/buttons/Settings.png"></a>
+        </div>
+  </header>
 
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-      <p id="greet-msg"></p>
-    </main>
-  </body>
+  <main>
+        <div id="links-main">
+          <h1 class="link-header">Home Links</h1>
+          <ul>
+          </ul>
+        </div>
+
+
+        <div id="links-custom">  
+          <h1 class="link-header">Custom Links</h1>
+          <ul>
+          </ul>
+        </div>
+  </main>
+
+  <div class="Menus">
+        <div id="settings-menu">
+          <p>Settings</p>
+          <button onclick="change_menu_state('setting-menu', 'none')">X</button>
+        </div>
+        
+        
+        <div id="user-menu">
+          <p>User</p>
+          <button onclick="change_menu_state('setting-menu', 'block')">X</button>
+        </div>
+
+        <div id="about-menu">
+          <p>About</p>
+          <button onclick="change_menu_state('setting-menu', 'block')">X</button>
+        </div>
+
+        <div id="power-menu">
+          <button onclick="change_menu_state('setting-menu', 'block')">Close</button>
+          <button onclick="change_menu_state('setting-menu', 'block')">Power Sleep</button>
+          <button onclick="change_menu_state('setting-menu', 'block')">Power Off  </button>
+        </div>
+  </div>
+
+</body>
 </html>
