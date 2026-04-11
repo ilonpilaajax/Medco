@@ -7,6 +7,8 @@
     "frontendDist": "../src",
     "beforeDevCommand": "",
     "beforeBuildCommand": ""
+  
+   
   },
   "app": {
     "windows": [
@@ -15,7 +17,8 @@
         "width": 800,
         "height": 600,
         "resizable": true,
-        "fullscreen": true
+        "fullscreen": true,
+      	"devtools": true
       }
     ],
     "security": {

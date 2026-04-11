@@ -4,7 +4,6 @@ function devLog(logi){
 
 }
 
-
 function change_menu_state(menu_name, state){
     
     switch (menu_name) {

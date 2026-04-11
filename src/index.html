@@ -21,6 +21,59 @@
         <div id="links-main">
           <h1 class="link-header">Home Links</h1>
           <ul>
+
+            <div class="linker">
+              <a href="https://www.youtube.com/">
+              <img src="media/linkers-title/Youtube.png">
+              </a>
+              <h2>Title</h2>
+              <style>
+                .linker{
+                  background-color: rgb(58, 58, 58);
+                  width: 100%;
+                  height: 100%;
+                  display:grid;
+                }
+                .linker img{
+                  width: 300px;
+                  height: 200px;
+                  object-fit: cover;
+                }
+                .linker h2{
+                  position: relative;
+                  left:40%;
+                  color: aliceblue;
+                }
+              </style>
+            </div>
+
+            <div class="linker">
+              <a href="https://www.youtube.com/" onclick="open_external()" target="_blank">
+              <img src="media/linkers-title/Youtube.png">
+              </a>
+              <h2>Title</h2>
+              <script>function open_external(){shell.open("firefox https://www.youtube.com/")}</script>
+              <style>
+                .linker{
+                  background-color: rgb(58, 58, 58);
+                  width: 100%;
+                  height: 100%;
+                  display:grid;
+                }
+                .linker img{
+                  width: 300px;
+                  height: 200px;
+                  object-fit: cover;
+                }
+                .linker h2{
+                  position: relative;
+                  left:40%;
+                  color: aliceblue;
+                }
+              </style>
+            </div>
+
+
           </ul>
         </div>
 
