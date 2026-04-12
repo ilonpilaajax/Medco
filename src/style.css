@@ -1,6 +1,6 @@
 
 body {
-  background-color: #00051f;
+  background-color: #1b1b1b;
   margin: 0;
   padding: 0;
 }
@@ -26,12 +26,20 @@ body {
 
 #links-main{
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 20px;
   width: 95%;
   border: 15%;
   background-color: #4d4d4d;
+}
+
+#links-main ul{
+  list-style: none;
   display: flex;
+}
+
+#links-main li{
+  margin-right: 20px;
 }
 
 #links-custom{
